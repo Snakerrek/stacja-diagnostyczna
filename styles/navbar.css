@@ -7,6 +7,7 @@ nav {
   padding: 0 5%;
   height: 100px;
   background-color: rgba(23, 23, 25, 0);
+  transition: background-color ease 0.5s;
 }
 
 nav .logo {
@@ -61,7 +62,7 @@ nav .icon-burger .line {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 960px) {
   nav .logo {
     float: none;
     width: auto;

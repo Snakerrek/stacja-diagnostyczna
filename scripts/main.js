@@ -8,4 +8,18 @@ const handleNavToggle = () => {
   }
 };
 
+const handleNavBackgroundChangeOnScroll = () => {
+  document.addEventListener('scroll', () => {
+    if (window.scrollY === 0) {
+      document.getElementsByTagName('nav')[0].style.backgroundColor =
+        'rgba(23, 23, 25, 0)';
+    }
+    if (window.scrollY !== 0) {
+      document.getElementsByTagName('nav')[0].style.backgroundColor =
+        'rgba(23, 23, 25, 1)';
+    }
+  });
+};
+
 handleNavToggle();
+handleNavBackgroundChangeOnScroll();

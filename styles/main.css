@@ -5,8 +5,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
@@ -56,12 +54,12 @@ body {
 }
 
 .header-content h1 {
-  font-size: 50px;
+  font-size: 75px;
   margin-bottom: 0;
 }
 
 .header-content p {
-  font-size: 1.5rem;
+  font-size: 30px;
   display: block;
   padding-bottom: 2rem;
 }
@@ -78,5 +76,14 @@ body {
 @media (max-width: 960px) {
   .container {
     padding: 0 3rem;
+  }
+  .header-content h1 {
+    font-size: 10vw;
+    margin-bottom: 0;
+  }
+  .header-content p {
+    font-size: 4vh;
+    display: block;
+    padding-bottom: 2rem;
   }
 }
