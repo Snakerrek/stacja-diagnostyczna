@@ -8,6 +8,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   margin: 0;
+  background: #171719;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* HEADER */
@@ -110,7 +121,9 @@ body {
 }
 
 .vehicles-section .container h1 {
+  color: white;
   font-size: 3rem;
+  margin-top: 50px;
 }
 
 .card-holder {
@@ -140,6 +153,7 @@ body {
 
 .card h2 {
   font-size: 1.6rem;
+  margin-top: 30px;
 }
 
 .card-lpg-img {
@@ -161,6 +175,39 @@ body {
 .card:nth-child(5) h2 {
   font-size: 1.5rem;
 }
+
+/* PRICING SECTION */
+.pricing-section {
+  background: #171719;
+}
+.pricing-section .container h1 {
+  font-size: 3rem;
+  color: white;
+  padding: 50px 0;
+}
+.price-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: yellow;
+}
+.price-tag {
+  height: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  background-color: magenta;
+}
+.price-tag .text {
+  width: 50%;
+  background-color: red;
+}
+.price-tag .price {
+  width: 15%;
+}
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1500px) {
   .about-section .container h1 {
@@ -197,5 +244,15 @@ body {
   }
   .vehicles-section .container {
     padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-section .container h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .vehicles-section .container h1 {
+    font-size: 2rem;
   }
 }
