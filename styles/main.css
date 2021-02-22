@@ -108,7 +108,7 @@ body {
 .card-holder {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .card {
@@ -132,6 +132,7 @@ body {
 @media (max-width: 960px) {
   .container {
     padding: 0 3rem;
+    width: 75vw;
   }
   .header-content h1 {
     font-size: 10vw;
@@ -146,7 +147,7 @@ body {
     font-size: 2vw;
   }
   .about-section .container img {
-    width: 62.5vw;
+    width: 100%;
     height: auto;
   }
 }
