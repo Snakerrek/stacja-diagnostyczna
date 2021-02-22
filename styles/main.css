@@ -16,7 +16,15 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.header-content {
   color: #fff;
+  max-width: 960px;
+  padding: 0 1rem;
+  margin: 0 15vw;
+  text-align: center;
 }
 
 .container {
@@ -135,13 +143,16 @@ body {
     width: 75vw;
   }
   .header-content h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     margin-bottom: 0;
   }
   .header-content p {
-    font-size: 4vh;
+    font-size: 3vh;
     display: block;
     padding-bottom: 2rem;
+  }
+  .about-section .container {
+    padding: 0;
   }
   .about-section .container p {
     font-size: 2vw;
@@ -149,5 +160,8 @@ body {
   .about-section .container img {
     width: 100%;
     height: auto;
+  }
+  .vehicles-section .container {
+    padding: 0;
   }
 }

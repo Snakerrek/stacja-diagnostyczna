@@ -112,3 +112,13 @@ nav .icon-burger .line {
     transform: translateY(-10px) rotate(-225deg);
   }
 }
+
+@media (max-width: 450px) {
+  nav .logo {
+    font-size: 36px;
+  }
+  nav .logo img {
+    width: 80px;
+    height: auto;
+  }
+}
