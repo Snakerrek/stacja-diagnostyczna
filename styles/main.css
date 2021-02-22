@@ -179,32 +179,49 @@ h6 {
 /* PRICING SECTION */
 .pricing-section {
   background: #171719;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 50px 0 100px 0;
 }
 .pricing-section .container h1 {
   font-size: 3rem;
   color: white;
   padding: 50px 0;
 }
+
 .price-holder {
+  max-width: 1200px;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
-  background-color: yellow;
 }
-.price-tag {
-  height: 50px;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  background-color: magenta;
+.price-holder:nth-child(even) {
+  background: #0c0c0d;
 }
-.price-tag .text {
-  width: 50%;
-  background-color: red;
+.description {
+  width: 60%;
+  text-align: center;
+  margin: 15px;
 }
-.price-tag .price {
+.description p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.price {
   width: 15%;
+  text-align: center;
+  margin: 15px;
+  margin-right: 0;
+}
+
+.price h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 /* MEDIA QUERIES */
@@ -246,13 +263,22 @@ h6 {
     padding: 0;
   }
 }
-
 @media (max-width: 450px) {
   .about-section .container h1 {
     font-size: 2rem;
     margin-bottom: 25px;
   }
   .vehicles-section .container h1 {
+    font-size: 2rem;
+  }
+  .description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .description p {
+    font-size: 1rem;
+  }
+  .price h2 {
     font-size: 2rem;
   }
 }
