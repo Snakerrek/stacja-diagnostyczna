@@ -105,6 +105,7 @@ h6 {
 .about-section .container p {
   text-align: left;
   font-size: 1.3rem;
+  line-height: 1.5;
 }
 .about-section .container img {
   padding-top: 20px;
