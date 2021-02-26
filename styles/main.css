@@ -21,6 +21,13 @@ h6 {
   margin-bottom: 0;
 }
 
+.container h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
 /* HEADER */
 
 .v-header {
@@ -99,8 +106,6 @@ h6 {
 }
 .about-section .container h1 {
   text-align: left;
-  font-size: 3rem;
-  margin-bottom: 50px;
 }
 .about-section .container p {
   text-align: left;
@@ -122,8 +127,7 @@ h6 {
 }
 
 .vehicles-section .container h1 {
-  color: white;
-  font-size: 3rem;
+  margin-bottom: 0px;
   margin-top: 50px;
 }
 
@@ -185,15 +189,20 @@ h6 {
   flex-flow: column nowrap;
   padding: 50px 0 100px 0;
 }
+.pricing-section .container {
+  padding: 0;
+  margin: 0;
+}
 table {
+  display: block;
+  max-width: 750px;
   border-collapse: collapse;
-  width: 800px;
-  height: 200px;
   border: 3px solid white;
   box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.2),
     -1px -1px 8px rgba(255, 255, 255, 0.2);
+  margin-bottom: 50px;
+  padding: 10px 10px;
 }
-
 tr {
   transition: all 0.2s ease-in;
   cursor: pointer;
@@ -201,11 +210,9 @@ tr {
 tr:nth-child(even) {
   background: #0c0c0d;
 }
-
 tr:hover {
   transform: scale(1.02);
 }
-
 td {
   color: white;
   font-size: 1.2rem;
@@ -214,6 +221,12 @@ td {
 }
 td:nth-child(2) {
   font-weight: 600;
+  white-space: nowrap;
+}
+.table-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -254,6 +267,12 @@ td:nth-child(2) {
   .vehicles-section .container {
     padding: 0;
   }
+  table {
+    width: 80vw;
+  }
+  .table-title {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 450px) {
   .about-section .container h1 {
@@ -262,5 +281,11 @@ td:nth-child(2) {
   }
   .vehicles-section .container h1 {
     font-size: 2rem;
+  }
+  table {
+    width: 90vw;
+  }
+  .table-title {
+    font-size: 1rem;
   }
 }
