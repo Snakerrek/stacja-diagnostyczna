@@ -194,14 +194,12 @@ h6 {
   margin: 0;
 }
 table {
-  display: block;
-  max-width: 750px;
   border-collapse: collapse;
+  width: 60vw;
   border: 3px solid white;
   box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.2),
     -1px -1px 8px rgba(255, 255, 255, 0.2);
   margin-bottom: 50px;
-  padding: 10px 10px;
 }
 tr {
   transition: all 0.2s ease-in;
@@ -286,6 +284,9 @@ td:nth-child(2) {
     width: 90vw;
   }
   .table-title {
+    font-size: 1rem;
+  }
+  td {
     font-size: 1rem;
   }
 }
