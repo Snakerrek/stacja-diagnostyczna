@@ -301,6 +301,58 @@ td:nth-child(2) {
   margin-bottom: 10px;
 }
 
+/* CONTACT SECTION */
+
+.contact-section {
+  padding: 20px 0;
+  background: #0c0c0d;
+  color: white;
+}
+.contact-section h1 {
+  padding-top: 30px;
+}
+.contact-holder {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+  padding: 30px 0 50px 0;
+}
+.contact-holder iframe {
+  margin: 0;
+  padding: 30px 20px;
+  border: none;
+  flex: 1 1 750px;
+  height: 70vh;
+}
+.contact-holder .description {
+  max-width: 750px;
+  flex: 1 1 300px;
+  padding: 30px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.contact-holder .description h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.contact-holder .description .underline {
+  display: inline-block;
+  border-bottom: 4px solid white;
+  padding-bottom: 5px;
+  width: 400px;
+  margin-bottom: 50px;
+}
+.contact-holder .description h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 30px 0;
+}
+.contact-holder .description p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1348px) {
