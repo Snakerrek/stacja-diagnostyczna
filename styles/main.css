@@ -120,7 +120,7 @@ h6 {
 }
 .about-section .container p {
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 .about-section .container img {
@@ -166,13 +166,16 @@ h6 {
   max-width: 250px;
   flex: 1 1 150px;
   background: #0c0c0d;
+  border-radius: 1rem;
 }
 .employee-card img {
   height: auto;
   width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .employee-card p {
-  text-align: left;
+  text-align: center;
   color: white;
   font-weight: 600;
   font-size: 1.1rem;
