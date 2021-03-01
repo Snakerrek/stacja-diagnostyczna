@@ -97,15 +97,26 @@ h6 {
   padding: 30px 50px 50px 50px;
   background: #171719;
   color: white;
+}
+.about-section .containers-holder {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
 .about-section .container {
   max-width: 750px;
+  flex: 1 1 600px;
 }
 .about-section .container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-section .container h2 {
   text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
 }
 .about-section .container p {
   text-align: left;
@@ -121,34 +132,51 @@ h6 {
 /* EMPLOYEES SECTION */
 .employees-section {
   background: #171719;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+  padding: 30px 50px 50px 50px;
 }
 .employees-section .description {
-  width: 50%;
-  height: 250px;
+  margin: 0 20px;
+  max-width: 750px;
+  flex: 1 1 600px;
+}
+.employees-section .description h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0 30px 0;
+  color: white;
 }
 .employees-section .description p {
-  text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: white;
 }
 .employees-cards-holder {
-  width: 50%;
+  max-width: 750px;
+  flex: 1 1 600px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 .employee-card {
-  height: 250px;
-  width: 200px;
+  margin: 15px;
+  max-width: 250px;
+  flex: 1 1 150px;
   background: #0c0c0d;
 }
 .employee-card img {
-  height: 200px;
-  width: 200px;
+  height: auto;
+  width: 100%;
 }
 .employee-card p {
-  text-align: center;
+  text-align: left;
   color: white;
   font-weight: 600;
   font-size: 1.1rem;
+  padding: 0 10px;
 }
 
 /* VEHICLES SECTION */
@@ -265,11 +293,17 @@ td:nth-child(2) {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1500px) {
-  .about-section .container h1 {
+@media (max-width: 1348px) {
+  .about-section .container h2 {
     text-align: center;
   }
   .about-section .container p {
+    text-align: center;
+  }
+  .employees-section .description h2 {
+    text-align: center;
+  }
+  .employees-section .description p {
     text-align: center;
   }
 }
@@ -294,6 +328,18 @@ td:nth-child(2) {
   .about-section .container p {
     font-size: 2vw;
   }
+  .about-section .container h2 {
+    font-size: 3vw;
+  }
+  .employees-section .description h2 {
+    font-size: 4vw;
+  }
+  .employees-section .description p {
+    font-size: 2vw;
+  }
+  .employee-card p {
+    font-size: 2vw;
+  }
   .about-section .container img {
     width: 100%;
     height: auto;
@@ -309,9 +355,14 @@ td:nth-child(2) {
   }
 }
 @media (max-width: 450px) {
-  .about-section .container h1 {
-    font-size: 2rem;
+  .about-section .container h2 {
     margin-bottom: 25px;
+  }
+  .employees-section .description h2 {
+    margin-bottom: 20px;
+  }
+  .employee-card p {
+    font-size: 3vw;
   }
   .vehicles-section .container h1 {
     font-size: 2rem;
