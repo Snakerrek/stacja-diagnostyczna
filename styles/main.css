@@ -338,7 +338,7 @@ td:nth-child(2) {
     font-size: 2vw;
   }
   .employee-card p {
-    font-size: 2vw;
+    font-size: 1rem;
   }
   .about-section .container img {
     width: 100%;
@@ -360,9 +360,6 @@ td:nth-child(2) {
   }
   .employees-section .description h2 {
     margin-bottom: 20px;
-  }
-  .employee-card p {
-    font-size: 3vw;
   }
   .vehicles-section .container h1 {
     font-size: 2rem;
