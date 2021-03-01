@@ -116,7 +116,7 @@ h6 {
 }
 .about-section .container h1 {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 30px 0 50px 0;
 }
 .about-section .container h2 {
   text-align: left;
@@ -264,7 +264,7 @@ h6 {
   padding: 0;
   margin: 0;
 }
-table {
+.pricing-section table {
   border-collapse: collapse;
   width: 60vw;
   border: 3px solid white;
@@ -272,30 +272,30 @@ table {
     -1px -1px 8px rgba(255, 255, 255, 0.2);
   margin-bottom: 50px;
 }
-tr {
+.pricing-section tr {
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
-tr:nth-child(even) {
+.pricing-section tr:nth-child(even) {
   background: #0c0c0d;
 }
-tr:nth-child(odd) {
+.pricing-section tr:nth-child(odd) {
   background: #171719;
 }
-tr:hover {
+.pricing-section tr:hover {
   transform: scale(1.02);
 }
-td {
+.pricing-section td {
   color: white;
   font-size: 1.2rem;
   padding: 12px 25px;
   text-align: left;
 }
-td:nth-child(2) {
+.pricing-section td:nth-child(2) {
   font-weight: 600;
   white-space: nowrap;
 }
-.table-title {
+.pricing-section .table-title {
   font-size: 2rem;
   color: white;
   margin-bottom: 10px;
@@ -319,7 +319,7 @@ td:nth-child(2) {
 }
 .contact-holder iframe {
   margin: 0;
-  padding: 30px 20px;
+  padding: 30px;
   border: none;
   flex: 1 1 750px;
   height: 70vh;
@@ -341,16 +341,26 @@ td:nth-child(2) {
   border-bottom: 4px solid white;
   padding-bottom: 5px;
   width: 400px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .contact-holder .description h3 {
   font-size: 2rem;
   font-weight: 800;
-  margin: 30px 0;
+  margin: 50px 0 30px 0;
 }
 .contact-holder .description p {
   margin: 0;
   font-size: 1.5rem;
+}
+.description table {
+  width: 400px;
+  font-size: 1.3rem;
+}
+.description table tr td:nth-child(2) {
+  font-weight: 600;
+}
+.description table tr:nth-child(3) td:nth-child(2) {
+  color: red;
 }
 
 /* MEDIA QUERIES */
@@ -409,10 +419,10 @@ td:nth-child(2) {
   .vehicles-section .container {
     padding: 0;
   }
-  table {
+  .pricing-section table {
     width: 80vw;
   }
-  .table-title {
+  .pricing-section .table-title {
     font-size: 1.5rem;
   }
 }
@@ -423,16 +433,64 @@ td:nth-child(2) {
   .employees-section .description h2 {
     margin-bottom: 20px;
   }
-  .vehicles-section .container h1 {
+  .container h1 {
     font-size: 2rem;
   }
-  table {
+  .pricing-section table {
     width: 90vw;
   }
-  .table-title {
+  .pricing-section .table-title {
     font-size: 1rem;
   }
-  td {
+  .pricing-section td {
     font-size: 1rem;
+  }
+
+  .contact-holder .description h2 {
+    font-size: 2.5rem;
+  }
+  .contact-holder .description .underline {
+    width: 320px;
+    margin: 0;
+  }
+  .contact-holder .description h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 50px 0 30px 0;
+  }
+  .contact-holder .description p {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .description table {
+    width: 300px;
+    font-size: 1rem;
+  }
+  .contact-holder iframe {
+    padding: 10px;
+  }
+}
+@media (max-width: 390px) {
+  .contact-holder .description {
+    flex: 1 1 250px;
+  }
+  .contact-holder .description h2 {
+    font-size: 2rem;
+  }
+  .contact-holder .description .underline {
+    width: 250px;
+  }
+  .contact-holder .description h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 50px 0 30px 0;
+  }
+  .contact-holder .description p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .description table {
+    width: 250px;
+    font-size: 0.8rem;
   }
 }
