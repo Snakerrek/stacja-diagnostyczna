@@ -1,3 +1,13 @@
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
+
 const handleNavToggle = () => {
   const links = document.getElementsByClassName('link');
 
