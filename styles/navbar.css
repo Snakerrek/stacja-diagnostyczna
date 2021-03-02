@@ -50,6 +50,10 @@ nav .links a {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+nav .links a:hover {
+  color: #cea640;
 }
 #nav-toggle {
   position: absolute;
