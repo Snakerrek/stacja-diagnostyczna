@@ -1,12 +1,23 @@
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
+const updateCopyrightText = () => {
+  const paragraph = document.getElementById('copyright-paragraph');
+  const date = new Date();
+  paragraph.innerText =
+    '© ' +
+    date.getFullYear().toString() +
+    ' PSKP Zespół Szkół Nr 1 im. Jana Kilińskiego w Kłobucku';
+};
 
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
+const smoothScroll = () => {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth',
+      });
     });
   });
-});
+};
 
 const handleNavToggle = () => {
   const links = document.getElementsByClassName('link');
@@ -43,6 +54,8 @@ const handleNavBackgroundChangeOnBurgerExpand = () => {
   });
 };
 
+smoothScroll();
 handleNavToggle();
 handleNavBackgroundChangeOnScroll();
 handleNavBackgroundChangeOnBurgerExpand();
+updateCopyrightText();
