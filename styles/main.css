@@ -424,7 +424,10 @@ footer .signature a {
 .animateUP,
 .animateLTR,
 .animateRTL,
-.animateFadeIn {
+.animateFadeIn,
+.animateFadeInHalfSec,
+.animateFadeInSec,
+.animateUPdelayed {
   opacity: 0;
 }
 

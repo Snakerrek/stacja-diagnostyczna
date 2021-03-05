@@ -11,7 +11,10 @@ const activateAnimationOnScroll = (
       if (triggerLine <= animationPoint) {
         objects[i].classList.add(animationName);
       }
-      if (delay != '0s') {
+      if (delay === 'progressive') {
+        const time = i / 5 + 's';
+        objects[i].style.animationDelay = time;
+      } else if (delay !== '0s') {
         objects[i].style.animationDelay = delay;
       }
     });
@@ -19,6 +22,16 @@ const activateAnimationOnScroll = (
 };
 
 activateAnimationOnScroll('.animateUP', 'slide-up');
+activateAnimationOnScroll(
+  '.animateUPdelayed',
+  'slide-up-delayed',
+  900,
+  'progressive'
+);
 activateAnimationOnScroll('.animateLTR', 'slide-left-to-right');
+activateAnimationOnScroll('.easyAnimateLTR', 'easy-slide-left-to-right');
 activateAnimationOnScroll('.animateRTL', 'slide-right-to-left');
+activateAnimationOnScroll('.easyAnimateRTL', 'easy-slide-right-to-left');
 activateAnimationOnScroll('.animateFadeIn', 'fade-in');
+activateAnimationOnScroll('.animateFadeInHalfSec', 'fade-in', 900, '0.5s');
+activateAnimationOnScroll('.animateFadeInSec', 'fade-in', 900, '1s');
