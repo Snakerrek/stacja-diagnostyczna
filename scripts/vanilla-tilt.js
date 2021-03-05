@@ -585,9 +585,16 @@ var VanillaTilt = (function () {
   return VanillaTilt;
 })();
 
-VanillaTilt.init(document.querySelectorAll('.card'), {
-  max: 15,
-  speed: 400,
-  glare: true,
-  'max-glare': 1,
-});
+// Doesn't use tilt for mobile devices.
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+  navigator.userAgent
+);
+
+if (!isMobile) {
+  VanillaTilt.init(document.querySelectorAll('.card'), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    'max-glare': 1,
+  });
+}
