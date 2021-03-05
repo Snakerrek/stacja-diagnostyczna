@@ -1,6 +1,6 @@
 @keyframes slideDownToUp {
   0% {
-    transform: translateY(200px);
+    transform: translateY(100px);
     opacity: 0;
   }
   50% {
@@ -64,10 +64,10 @@
 }
 .slide-up,
 .slide-up-delayed {
-  animation: slideDownToUp 3s ease forwards;
+  animation: slideDownToUp 2s ease forwards;
 }
 .slide-left-to-right {
-  animation: slideLeftToRight 3s ease forwards;
+  animation: slideLeftToRight 2s ease forwards;
 }
 .easy-slide-left-to-right {
   animation: easySlideLeftToRight 1s ease forwards;
@@ -76,8 +76,8 @@
   animation: easySlideRightToLeft 1s ease forwards;
 }
 .slide-right-to-left {
-  animation: slideRightToLeft 3s ease forwards;
+  animation: slideRightToLeft 2s ease forwards;
 }
 .fade-in {
-  animation: fadeIn 3s ease forwards;
+  animation: fadeIn 2s ease forwards;
 }

@@ -21,17 +21,24 @@ const activateAnimationOnScroll = (
   }
 };
 
-activateAnimationOnScroll('.animateUP', 'slide-up');
-activateAnimationOnScroll(
-  '.animateUPdelayed',
-  'slide-up-delayed',
-  900,
-  'progressive'
-);
-activateAnimationOnScroll('.animateLTR', 'slide-left-to-right');
-activateAnimationOnScroll('.easyAnimateLTR', 'easy-slide-left-to-right');
-activateAnimationOnScroll('.animateRTL', 'slide-right-to-left');
-activateAnimationOnScroll('.easyAnimateRTL', 'easy-slide-right-to-left');
-activateAnimationOnScroll('.animateFadeIn', 'fade-in');
-activateAnimationOnScroll('.animateFadeInHalfSec', 'fade-in', 900, '0.5s');
-activateAnimationOnScroll('.animateFadeInSec', 'fade-in', 900, '1s');
+window.addEventListener('DOMContentLoaded', () => {
+  activateAnimationOnScroll('.animateUP', 'slide-up');
+  activateAnimationOnScroll(
+    '.animateUPdelayed',
+    'slide-up-delayed',
+    900,
+    'progressive'
+  );
+  activateAnimationOnScroll('.animateLTR', 'slide-left-to-right');
+  activateAnimationOnScroll('.easyAnimateLTR', 'easy-slide-left-to-right');
+  activateAnimationOnScroll('.animateRTL', 'slide-right-to-left');
+  activateAnimationOnScroll('.easyAnimateRTL', 'easy-slide-right-to-left');
+  activateAnimationOnScroll('.animateFadeIn', 'fade-in');
+  activateAnimationOnScroll('.animateFadeInHalfSec', 'fade-in', 900, '0.5s');
+  activateAnimationOnScroll(
+    '.animateFadeInQuarterSec',
+    'fade-in',
+    900,
+    '0.25s'
+  );
+});
