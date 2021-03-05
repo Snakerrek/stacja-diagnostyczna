@@ -69,9 +69,11 @@ const handleNavBackgroundChangeOnBurgerExpand = () => {
   });
 };
 
-activateTiltOnCards();
-smoothScroll();
-handleNavToggle();
-handleNavBackgroundChangeOnScroll();
-handleNavBackgroundChangeOnBurgerExpand();
-updateCopyrightText();
+window.addEventListener('DOMContentLoaded', () => {
+  activateTiltOnCards();
+  smoothScroll();
+  handleNavToggle();
+  handleNavBackgroundChangeOnScroll();
+  handleNavBackgroundChangeOnBurgerExpand();
+  updateCopyrightText();
+});

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-/* color: #cea640; color for headers (TODO)*/
+
+@import 'navbar.css';
+@import 'animations.css';
 
 * {
   box-sizing: border-box;
@@ -417,6 +419,13 @@ footer .signature {
 }
 footer .signature a {
   color: #cea640;
+}
+
+.animateUP,
+.animateLTR,
+.animateRTL,
+.animateFadeIn {
+  opacity: 0;
 }
 
 /* MEDIA QUERIES */

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
     <script
       src="https://kit.fontawesome.com/abc18026dc.js"
       crossorigin="anonymous"
     ></script>
     <script src="scripts/vanilla-tilt.js" defer></script>
+    <script src="scripts/animations.js" defer></script>
     <script src="scripts/main.js" defer></script>
+
     <title>PSKP ZS nr.1 w Kłobucku</title>
   </head>
   <body>
@@ -55,46 +56,47 @@
     </header>
     <a class="anchor" id="about-section"></a>
     <section class="about-section">
-      <div class="container">
-        <h1>O nas</h1>
-      </div>
-      <div class="containers-holder">
         <div class="container">
-          <h2>Historia stacji</h2>
-          <p>
-            Nasza stacja kontroli pojazdów powstała w 25.XI.1970r. jako
-            uzupełnienie oferty Warsztatów Szkolnych przy Zespole Szkół Nr 1 w
-            Kłobucku działających z powodzeniem już od ponad 50 lat.<br /><br />
-            Na początku oferowaliśmy podstawowe badania techniczne samochodów do
-            3,5t dopuszczalnej masy całkowitej. Z czasem uzupełniliśmy ofertę o
-            badanie motocykli, ciągników rolniczych do 3,5t samochodów z
-            instalacją gazową, badania pokolizyjne, badanie pojazdów
-            sprowadzonych z zagranicy, badania pojazdów z zabranym dowodem
-            rejestracyjnym, ponadto proponujemy kompleksowe bezpłatne
-            sprawdzenie pojazdu przed zakupem.
-          </p>
+          <h1>O nas</h1>
         </div>
-        <div class="container">
-          <img src="images/about-picture.PNG" />
+        <div class="containers-holder">
+          <div class="container animateLTR">
+            <h2>Historia stacji</h2>
+            <p>
+              Nasza stacja kontroli pojazdów powstała w 25.XI.1970r. jako
+              uzupełnienie oferty Warsztatów Szkolnych przy Zespole Szkół Nr 1 w
+              Kłobucku działających z powodzeniem już od ponad 50 lat.<br /><br />
+              Na początku oferowaliśmy podstawowe badania techniczne samochodów
+              do 3,5t dopuszczalnej masy całkowitej. Z czasem uzupełniliśmy
+              ofertę o badanie motocykli, ciągników rolniczych do 3,5t
+              samochodów z instalacją gazową, badania pokolizyjne, badanie
+              pojazdów sprowadzonych z zagranicy, badania pojazdów z zabranym
+              dowodem rejestracyjnym, ponadto proponujemy kompleksowe bezpłatne
+              sprawdzenie pojazdu przed zakupem.
+            </p>
+          </div>
+          <div class="container animateRTL">
+            <img src="images/about-picture.PNG" />
+          </div>
         </div>
       </div>
     </section>
     <section class="employees-section">
       <div class="employees-cards-holder">
-        <div class="employee-card">
+        <div class="employee-card animateFadeIn">
           <img src="/images/workers-photos/adam_kocik.jpg" alt="" />
           <p>Adam Kocik</p>
         </div>
-        <div class="employee-card">
-          <img src="/images/workers-photos/mariusz_kraszewski.jpg" alt="" />
-          <p>Mariusz Kraszewski</p>
-        </div>
-        <div class="employee-card">
+        <div class="employee-card animateFadeIn">
           <img src="/images/workers-photos/mariusz_desperak.jpg" alt="" />
           <p>Mariusz Desperak</p>
         </div>
+        <div class="employee-card animateFadeIn">
+          <img src="/images/workers-photos/mariusz_kraszewski.jpg" alt="" />
+          <p>Mariusz Kraszewski</p>
+        </div>
       </div>
-      <div class="description">
+      <div class="description animateRTL">
         <h2>Diagności</h2>
         <p>
           W naszej stacji kontroli pojazdów zatrudniamy diagnostów o bardzo
