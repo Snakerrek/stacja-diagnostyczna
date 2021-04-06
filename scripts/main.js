@@ -69,6 +69,18 @@ const handleNavBackgroundChangeOnBurgerExpand = () => {
   });
 };
 
+const autoSlide = () => {
+  document.getElementById('radio1').checked = true;
+  let counter = 2;
+  setInterval(() => {
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 5) {
+      counter = 1;
+    }
+  }, 5000);
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   activateTiltOnCards();
   smoothScroll();
@@ -76,4 +88,5 @@ window.addEventListener('DOMContentLoaded', () => {
   handleNavBackgroundChangeOnScroll();
   handleNavBackgroundChangeOnBurgerExpand();
   updateCopyrightText();
+  autoSlide();
 });
