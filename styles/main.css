@@ -2,14 +2,19 @@
 
 @import 'navbar.css';
 @import 'animations.css';
+@import 'slider.css';
 
 * {
   box-sizing: border-box;
+}
+
+html {
   overflow-x: hidden;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
   margin: 0;
   background: #171719;
 }
@@ -174,7 +179,7 @@ h6 {
 .employee-card {
   margin: 15px;
   max-width: 250px;
-  flex: 1 1 150px;
+  flex: 1 1 180px;
   background: #0c0c0d;
   border-radius: 1rem;
 }
@@ -293,6 +298,9 @@ h6 {
   font-size: 1.2rem;
   padding: 12px 25px;
   text-align: left;
+}
+.pricing-section td:nth-child(2) {
+  text-align: right;
 }
 .pricing-section td:nth-child(2) {
   font-weight: 600;
