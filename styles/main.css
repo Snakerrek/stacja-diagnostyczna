@@ -112,7 +112,7 @@ h6 {
 
 .about-section {
   padding: 30px 50px 50px 50px;
-  background: #171719;
+  background: #0c0c0d;
   color: white;
 }
 .about-section .containers-holder {
@@ -146,7 +146,7 @@ h6 {
 
 /* EMPLOYEES SECTION */
 .employees-section {
-  background: #171719;
+  background: #0c0c0d;
   display: flex;
   flex-flow: row wrap-reverse;
   justify-content: space-around;
@@ -201,7 +201,7 @@ h6 {
 
 .vehicles-section {
   padding: 20px 0;
-  background: #0c0c0d;
+  background: #171719;
   color: white;
 }
 
