@@ -89,7 +89,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(23, 23, 25, 0.8);
+  background-color: rgba(23, 23, 25, 0.55);
   z-index: 1;
 }
 
@@ -170,7 +170,7 @@ h6 {
 }
 .employees-cards-holder {
   max-width: 750px;
-  flex: 1 1 600px;
+  flex: 1 1 650px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -195,6 +195,7 @@ h6 {
   font-weight: 600;
   font-size: 1.1rem;
   padding: 0 10px;
+  white-space: nowrap;
 }
 
 /* VEHICLES SECTION */
