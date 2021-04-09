@@ -504,16 +504,16 @@ footer .signature a {
     padding: 0;
   }
   .about-section .container p {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .about-section .container h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .employees-section .description h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .employees-section .description p {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .employee-card p {
     font-size: 1rem;
@@ -537,12 +537,43 @@ footer .signature a {
     text-align: center;
   }
 }
+@media (max-width: 600px) {
+  .about-section .container p {
+    font-size: 3.5vw;
+  }
+  .about-section .container h2 {
+    font-size: 4.5vw;
+  }
+  .employees-section .description h2 {
+    font-size: 4.5vw;
+  }
+  .employees-section .description p {
+    font-size: 3.5vw;
+  }
+}
 @media (max-width: 450px) {
+  .about-section {
+    padding: 25px;
+  }
+  .employees-section {
+    padding: 25px;
+  }
+  .employees-section .description {
+    margin: 0;
+  }
   .about-section .container h2 {
     margin-bottom: 25px;
+    font-size: 5vw;
+  }
+  .about-section .container p {
+    font-size: 4vw;
   }
   .employees-section .description h2 {
     margin-bottom: 20px;
+    font-size: 5vw;
+  }
+  .employees-section .description p {
+    font-size: 4vw;
   }
   .container h1 {
     font-size: 2rem;
