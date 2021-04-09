@@ -122,7 +122,7 @@ h6 {
 }
 .about-section .container {
   max-width: 750px;
-  flex: 1 1 600px;
+  flex: 1 1 620px;
 }
 .about-section .container h1 {
   text-align: center;
@@ -142,6 +142,7 @@ h6 {
 }
 .about-section .container img {
   padding-top: 20px;
+  width: 100%;
 }
 
 /* EMPLOYEES SECTION */
@@ -155,7 +156,7 @@ h6 {
 .employees-section .description {
   margin: 0 20px;
   max-width: 750px;
-  flex: 1 1 600px;
+  flex: 1 1 550px;
 }
 .employees-section .description h2 {
   font-size: 2rem;
@@ -443,18 +444,6 @@ footer .signature a {
 /* MEDIA QUERIES */
 
 @media (max-width: 1376px) {
-  .about-section .container h2 {
-    text-align: center;
-  }
-  .about-section .container p {
-    text-align: center;
-  }
-  .employees-section .description h2 {
-    text-align: center;
-  }
-  .employees-section .description p {
-    text-align: center;
-  }
   .card {
     width: 200px;
     height: 250px;
@@ -469,6 +458,27 @@ footer .signature a {
   }
   .card:nth-child(5) h2 {
     font-size: 1.2rem;
+  }
+
+  .contact-holder .description h2 {
+    font-size: 2rem;
+  }
+  .contact-holder .description .underline {
+    width: 275px;
+    margin-bottom: 40px;
+  }
+  .contact-holder .description h3 {
+    font-size: 1.5rem;
+    margin: 30px 0 20px 0;
+    color: #cea640;
+  }
+  .contact-holder .description p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .description table {
+    width: 300px;
+    font-size: 1.1rem;
   }
 }
 
@@ -490,16 +500,16 @@ footer .signature a {
     padding: 0;
   }
   .about-section .container p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .about-section .container h2 {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .employees-section .description h2 {
     font-size: 4vw;
   }
   .employees-section .description p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .employee-card p {
     font-size: 1rem;
