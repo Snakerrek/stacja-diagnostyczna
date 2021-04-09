@@ -9,6 +9,7 @@
 }
 
 .slider {
+  margin-top: -30px;
   width: calc(16 * 80px);
   height: calc(9 * 80px);
   border-radius: 10px;
@@ -118,29 +119,29 @@
   background: #cea640;
 }
 
-@media (max-width: 1348px) {
+@media (max-width: 1376px) {
   .slider {
-    width: calc(16 * 55px);
-    height: calc(9 * 55px);
+    width: calc(16 * 50px);
+    height: calc(9 * 50px);
   }
 
   .slides {
-    height: calc(9 * 55px);
+    height: calc(9 * 50px);
   }
 
   .slide img {
-    width: calc(16 * 55px);
-    height: calc(9 * 55px);
+    width: calc(16 * 50px);
+    height: calc(9 * 50px);
   }
 
   .navigation-manual {
-    width: calc(16 * 55px);
+    width: calc(16 * 50px);
     margin-top: -50px;
   }
 
   .navigation-auto {
-    width: calc(16 * 55px);
-    margin-top: 445px;
+    width: calc(16 * 50px);
+    margin-top: 400px;
   }
 }
 
