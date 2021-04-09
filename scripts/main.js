@@ -69,16 +69,29 @@ const handleNavBackgroundChangeOnBurgerExpand = () => {
   });
 };
 
-const autoSlide = () => {
-  document.getElementById('radio1').checked = true;
+const sliderBehaviour = () => {
   let counter = 2;
+  document.getElementById('radio1').checked = true;
+  let direction = 'forward';
   setInterval(() => {
     document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if (counter > 5) {
-      counter = 1;
+    if (direction === 'forward') {
+      if (counter === 5) {
+        direction = 'backward';
+        counter--;
+      } else counter++;
+    } else {
+      if (counter === 1) {
+        direction = 'forward';
+        counter++;
+      } else counter--;
     }
   }, 5000);
+
+  let manualButtons = document.getElementsByClassName('manual-btn');
+  for (let i = 0; i < manualButtons.length; i++) {
+    manualButtons[i].onmousedown = () => (counter = i + 1);
+  }
 };
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -88,5 +101,5 @@ window.addEventListener('DOMContentLoaded', () => {
   handleNavBackgroundChangeOnScroll();
   handleNavBackgroundChangeOnBurgerExpand();
   updateCopyrightText();
-  autoSlide();
+  sliderBehaviour();
 });
