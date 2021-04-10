@@ -45,7 +45,7 @@ nav .links li {
 nav .links a {
   white-space: nowrap;
   display: block;
-  padding: 1rem;
+  padding: 16px;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
